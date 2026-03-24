@@ -1,37 +1,37 @@
 /* Portfolio Section */
 .portfolio.section {
-    padding: 80px 0;
+  padding: 80px 0;
 }
 
 .light-background {
-    background-color: #f8f9fa;
+  background-color: #f8f9fa;
 }
 
 /* Section Title */
 .section-title {
-    text-align: center;
-    margin-bottom: 50px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .section-title h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #2c3e50;
-    margin-bottom: 15px;
-    position: relative;
-    display: inline-block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
 }
 
 .section-title h2::after {
-    content: '';
-    position: absolute;
-    width: 60%;
-    height: 4px;
-    background: linear-gradient(90deg, #3498db, #2c3e50);
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 2px;
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 4px;
+  background: linear-gradient(90deg, #3498db, #2c3e50);
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
 }
 
 /* Projects Section */
@@ -49,7 +49,7 @@
 
 /* Base resets and global typography */
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   background-color: var(--color-dark-bg);
   color: var(--color-text);
   line-height: 1.6;
@@ -77,7 +77,8 @@ body {
   margin-left: -15px;
 }
 
-.col-lg-4, .col-md-6 {
+.col-lg-4,
+.col-md-6 {
   padding-right: 15px;
   padding-left: 15px;
   margin-bottom: 30px;
@@ -85,7 +86,8 @@ body {
 
 /* Responsive Grid Adjustments */
 /* Mobile (default) */
-.col-lg-4, .col-md-6 {
+.col-lg-4,
+.col-md-6 {
   flex: 0 0 100%;
   max-width: 100%;
 }
@@ -151,7 +153,9 @@ body {
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   background-color: var(--color-card-bg);
 }
 
@@ -185,7 +189,9 @@ body {
   align-items: flex-start;
   padding: 25px;
   opacity: 0;
-  transition: opacity 0.4s ease, background 0.4s ease;
+  transition:
+    opacity 0.4s ease,
+    background 0.4s ease;
 }
 
 .project-item:hover .project-overlay {
@@ -199,7 +205,9 @@ body {
   margin-bottom: 5px;
   color: var(--color-text);
   transform: translateY(20px);
-  transition: transform 0.4s ease, opacity 0.4s ease;
+  transition:
+    transform 0.4s ease,
+    opacity 0.4s ease;
   opacity: 0;
 }
 
@@ -207,7 +215,9 @@ body {
   font-size: 16px;
   color: var(--color-text);
   transform: translateY(20px);
-  transition: transform 0.4s ease 0.1s, opacity 0.4s ease 0.1s;
+  transition:
+    transform 0.4s ease 0.1s,
+    opacity 0.4s ease 0.1s;
   opacity: 0;
 }
 
@@ -356,7 +366,7 @@ body {
 }
 
 .project-features ul li::before {
-  content: '✓'; /* Custom bullet point */
+  content: "✓"; /* Custom bullet point */
   color: var(--color-accent);
   font-weight: bold;
   position: absolute;
@@ -392,3 +402,24 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
+/* Make the number and + sign appear inline horizontally */
+.stats-item {
+  text-align: center;
+}
+
+.stats-item .purecounter {
+  display: inline-block !important;
+}
+
+.stats-item .purecounter + span {
+  display: inline-block !important;
+  margin-left: 2px;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* Force the number container to stay inline */
+.stats-item span:first-of-type {
+  display: inline-block !important;
+}
+/* Alternative: Target the number display */
